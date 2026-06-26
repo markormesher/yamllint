@@ -4,7 +4,7 @@ RUN apt update \
   && apt install -y --no-install-recommends yamllint git \
   && apt clean cache
 
-COPY ./config.yml /app/.
+COPY ./config.yml /app/
 
 LABEL image.name=markormesher/yamllint
 LABEL image.registry=ghcr.io
