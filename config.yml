@@ -1,0 +1,17 @@
+---
+extends: "default"
+
+rules:
+  comments:
+    min-spaces-from-content: 1
+  empty-values: "enable"
+  line-length: "disable"
+  quoted-strings:
+    quote-type: "any"
+    required: true
+  truthy:
+    level: "error"
+    check-keys: false
+    allowed-values:
+      - "true"
+      - "false"
